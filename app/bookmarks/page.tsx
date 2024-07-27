@@ -12,7 +12,7 @@ export default function Bookmarks() {
             Bookmarks
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            A collection of usefull bookmarks for open internet
+            A collection of use full links from open internet
           </p>
         </div>
         <div className="container py-12">

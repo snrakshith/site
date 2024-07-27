@@ -1,6 +1,6 @@
 {
   "name": "sn-site",
-  "version": "2.2.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "next dev",
