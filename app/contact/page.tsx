@@ -3,22 +3,10 @@ import { useRandomColorPair } from 'lib/hooks/useRandomColorPair'
 import { contact } from 'config/contact'
 
 import { RoughNotation } from 'react-rough-notation'
+import Link from 'next/link'
 
 function Contact(): React.ReactElement {
   const [randomColor] = useRandomColorPair()
-
-  // function onScheduleMeeting(): void {
-  //   if (!contact.calendly) {
-  //     console.error('err: calendly link was not provided.')
-  //     return
-  //   }
-
-  //   const config = {
-  //     url: contact.calendly,
-  //   }
-
-  //   // openPopupWidget(config)
-  // }
 
   return (
     <>
@@ -26,9 +14,9 @@ function Contact(): React.ReactElement {
         <div className="container py-12">
           <p>
             Do you have a project in mind? Want to hire me? or simply wanna chat? Feel free to
-            <span
+            <Link
               className="ml-2 cursor-pointer !font-normal !text-black !no-underline dark:!text-white"
-              // onClick={onScheduleMeeting}
+              href={`mailto:${siteMetadata.email}`}
               role="button"
               tabIndex={0}
             >
@@ -40,9 +28,9 @@ function Contact(): React.ReactElement {
                 animationDuration={2000}
                 color={randomColor}
               >
-                schedule a meeting
+                schedule a call or mail me
               </RoughNotation>
-            </span>
+            </Link>
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@
 const siteMetadata = {
   title: 'Rakshith SN',
   author: 'Rakshith SN',
-  headerTitle: 'my site',
+  headerTitle: 'sn',
   description: 'A blog were my thoughts gets flowed',
   language: 'en-us',
   theme: 'system', // system, dark or light
